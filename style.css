@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px 300px ;
+    font-family: 'Kumbh Sans';
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+.ham{
+    display: none;
+}
+nav h1{
+    font-size: 40px;
+    padding-right: 30px;
+}
+.hidden{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    margin: 0px 10px;
+    color: hsl(219, 9%, 45%);
+}
+nav img{
+    width: 100%;
+}
+.navleft{
+    display: flex;
+    align-items: center;
+}
+.pic{
+    width: 40px;
+}
+.icon{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+}
+.big{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.big img{
+    width: 100%;
+    border-radius: 10px;
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.lower div {
+    width: 100px;
+}
+.lower img{
+    width: 100%;
+    border-radius: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.right h3{
+    color: hsl(26, 100%, 55%) ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.right h1{
+    font-size: 30px;
+}
+.description{
+    color: hsl(219, 9%, 45%);
+    margin: 20px 0px;
+}
+.num{
+    display: flex;
+    align-items: center;
+}
+.rp{
+    font-weight: bold;
+    font-size: 30px;
+}
+.discount{
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.fp{
+    text-decoration: line-through;
+    color: hsl(219, 9%, 45%);
+    margin: 10px 0px 20px 0px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+button{
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    width: 48%;
+    border-radius: 10px;
+    color: white;
+}
+button i{
+    margin-right: 5px;
+}
+.change{
+    display: flex;
+    width: 48%;
+    padding: 8px;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+}
+.change i {
+    background-color: white;
+    color: hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+/* //MEDIA QUERRIES// */
+
+@media screen and (max-width:700px){
+    #hamburger{
+        display: none;
+    }
+    body {
+        padding: 0;
+    }
+    nav{
+        padding: 10px 20px;
+    }
+    nav h1{
+        font-size: 30px;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .lower{
+        display: none;
+    }
+    .prices{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        flex-direction: column;
+    }
+    button, .change{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .big img{
+        border-radius: 0px;
+    }
+    .left{
+        align-items: normal;
+        padding-left: 0px;
+    }
+    .right{
+        align-items: left;
+        width: 80%; 
+    }
+    .ham{
+        display: flex;
+        margin:10px 10px 0px 10px;
+    }
+    .hidden{
+        display: none;
+    }
+    .hidden li{
+        list-style-type: none;
+    }
+}

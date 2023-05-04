@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sneakers</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navleft">
+        <img class="ham" src="./images/icon-menu.svg" alt="hamburger">
+        <h1>sneakers</h1>
+        <ul class="hidden">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="pic"><img src="./images/image-avatar.png" alt="image-avatar" /></div>
+      </div>
+    </nav>
+    <section>
+      <div class="left">
+        <div class="big">
+          <img src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="lower">
+          <div>
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div>
+            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h3>Sneaker Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="prices">
+          <div class="num">
+            <p class="rp">$125.00</p> <p class="discount">50% </p>
+          </div>
+          <p class="fp">$250.00 </p>
+        </div>
+        <footer>
+          <div class="change">
+            <i class="fa-solid fa-minus"></i>
+            <p id="quantity">0</p>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </footer>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
